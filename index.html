@@ -1,6 +1,19 @@
 <!DOCTYPE>
 <html>
     <style>
+        #page-container{
+            position: relative;
+            min-height: 100vh;
+        }
+        #content-wrap{
+            padding-bottom: 2.5rem;
+        }
+        #footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+        }
         ul{
             display: inline-block;
         }
@@ -28,15 +41,19 @@
     </header>    
 
     <body>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-        <form>
-            <input type="text">
-        </form>
-        <button type="button">Google Search</button>
-        <button type="button">I'm Feeling Lucky</button>
+        <div id="page-container">
+            <div id="content-wrap">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+                <form>
+                    <input type="text">
+                </form>
+                <button type="button">Google Search</button>
+                <button type="button">I'm Feeling Lucky</button>
+            </div>
+        </div>
     </body>
 
-    <footer>
+    <footer id="footer">
         <ul>
             <li>Advertising</li>
             <li>Business</li>
