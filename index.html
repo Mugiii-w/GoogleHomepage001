@@ -14,6 +14,20 @@
             width: 100%;
             height: 2.5rem;
         }
+
+        .center-content{
+            margin:auto;
+        }
+        .image-scale{
+            transform: scale(0.4)
+        }
+        .left{
+            margin-left: 0px;
+        }
+        .right{
+            margin-right: 0px;
+        }
+
         ul{
             display: inline-block;
         }
@@ -28,21 +42,21 @@
         
     </style>
     <header>
-        <ul>
+        <ul class="left">
             <li>About</li>
             <li>Store</li>
         </ul>
-        <ul>
+        <ul class="right">
             <li>Gmail</li>
             <li>Images</li>
         </ul>
-        <img src="https://static.thenounproject.com/png/10563-200.png" alt="9 dots">
+        <img class="image-scale" src="https://static.thenounproject.com/png/10563-200.png" alt="9 dots">
         <button type="button">Sign in</button>
     </header>    
 
     <body>
         <div id="page-container">
-            <div id="content-wrap">
+            <div class="center-content" id="content-wrap">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
                 <form>
                     <input type="text">
